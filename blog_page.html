@@ -1,0 +1,174 @@
+<!--This is the blog page-->
+
+<!DOCTYPE html>
+<!--Color Palet: #f4e400-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--This is the title for the website-->
+    <title >Testing Website</title>
+    <link rel="stylesheet" href="blog_page.css">
+    <script defer src="blog_page.js"></script>
+    <script src="https://kit.fontawesome.com/90839497e3. js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!--This is for the top breadcrumb of the page-->
+
+    <header>
+        <a href="#blog_header">
+            <img class="top_logo" src="Images/pixel_maddmundstudios_full_logo.png" alt="logo">
+        </a>
+        <nav>
+            <ul class="nav_items">
+                <!--
+                <div class="game_dropdown">
+                    <button>Games</button>
+                    <div class="game_content">
+                        <a href="">Game One</a>
+                        <a href="">Game Two</a>
+                        <a href="">Game Three</a>
+                    </div>
+                </div>
+                -->
+                <li><a href="index.html">Main Menu</a></li>
+            </ul>
+        </nav>
+
+        <nav class="socials">
+            <li>
+                <a href="https://www.youtube.com/@MaddmundStudios">
+                    <img src="Images/youtube_icon.png" alt="logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/@maddmundstudios">
+                    <img src="Images/tiktok_icon.png" alt="logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/maddmundstudios/">
+                    <img src="Images/instagram_icon.png" alt="logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://x.com/maddmundstudios/media">
+                    <img src="Images/twitter_icon.png" alt="logo">
+                </a>
+            </li>         
+        </nav>
+    </header>
+    <!--This is the parallax background-->
+    <section class="blog_background_main">
+        <section class="parallax_container">
+            <div class="parallax_background">
+                <img src="Images/blog_background_1.gif" style="z-index: 9;">
+                <img src="Images/blog_background_2.png" style="z-index: 8;">
+                <img src="Images/blog_background_3.png" style="z-index: 7;">
+                <img src="Images/blog_background_4.png" style="z-index: 6;">
+                <img src="Images/blog_background_6.png" style="z-index: 5;">
+                <img src="Images/blog_background_7.png" style="z-index: 4;">
+                <img src="Images/blog_background_8.gif" style="z-index: 3;">
+                <img src="Images/blog_background_9.png" style="z-index: 2;">
+            </div>
+        </section>
+    </section>
+    <section class="tiled_background">
+        <img src="Images/blog_background_tiled.png">
+    </section>
+
+    <section id="blog_header" class="blog_header">
+        <h1>
+            <div class="hidden">
+                MaddMund Blogs
+            </div>
+        </h1>
+    </section>
+
+    <!--Copy this to make a new note(This will be changes to be more efficient)-->
+
+    <section class="blog_information">
+        <section class="blog_section_right">
+            <div class="blog_info_container_right">
+                <div class="blog_title_right" style="z-index: 2;">
+                    Title and Date
+                </div>
+                <div class="blog_info_right" style="z-index: 2;">
+                    Info Here
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <!--This script triggers the heading to change when you scroll-->
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky_header", window.scrollY > 0);
+            header = document.querySelector(".nav_items");
+            header.classList.toggle("sticky_nav_items", window.scrollY > 0);
+            header = document.querySelector(".top_logo");
+            header.classList.toggle("sticky_top_logo", window.scrollY > 0);
+            header = document.querySelector(".socials");
+            header.classList.toggle("sticky_socials", window.scrollY > 0);
+
+            //Old code for parallax background
+
+            /*const target = document.querySelectorAll(".scroll");
+            
+            /*max_height = 1500;
+            var index = 0, length = target.length
+            var index_2 = 0, length = target.length
+            if( window.pageYOffset < max_height) {
+                for(index; index < length; index++) {
+                    var pos = window.pageYOffset * target[index].dataset.rate
+                    target[index].style.transform =  'translate3d(0px, '+pos+'px, 0px)';
+                }
+            }
+            if(window.pageYOffset >= max_height) {
+                for(index_2; index_2 < length; index_2++) {
+                    target[index_2].classList.toggle("hidden_images", window.pageYOffset >= max_height);
+                }
+            }*/
+
+        }) 
+    </script>
+
+    <footer>
+        <img class="bottom_logo" src="Images/pixel_maddmundstudios_crown_logo.png" alt="logo">
+        <nav class="bottom_socials">
+            <li>
+                <a href="https://www.youtube.com/@MaddmundStudios">
+                    <img src="Images/youtube_icon.png" alt="logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/@maddmundstudios">
+                    <img src="Images/tiktok_icon.png" alt="logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/maddmundstudios/">
+                    <img src="Images/instagram_icon.png" alt="logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://x.com/maddmundstudios/media">
+                    <img src="Images/twitter_icon.png" alt="logo">
+                </a>
+            </li>   
+        </nav>
+        <nav>
+            <ul class="nav_bottom_items">
+                <li><a href="index.html">Main Menu</a></li>
+                <li><a href="Other Pages/privacy_policy_page.html">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>

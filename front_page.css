@@ -1,0 +1,581 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+:root {
+    --text-colormain: #f4e400;
+    --text-colorblack: #000;
+    --text-colorwhite: #fff;
+    --text-colorfooter: #7d1925;
+
+}
+
+
+/*This is the Header*/
+
+.top_logo {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    overflow-x: auto;
+    overflow-y: auto;
+    filter: invert(72%) sepia(23%) saturate(2141%) hue-rotate(14deg) brightness(114%) contrast(105%);
+    transition: all ease 0.3s;
+    transition: all ease 0.3s;
+}
+
+.top_logo:hover {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(331deg) brightness(103%) contrast(100%);
+}
+
+.bottom_logo {
+    width: 85px;
+    height: 85px;
+    filter: invert(0%) sepia(7%) saturate(6%) hue-rotate(75deg) brightness(97%) contrast(101%);
+}
+
+li, a, button{
+    color: var(--text-colormain);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(1px);
+    align-items: center;
+    padding: 0 3%;
+    height: 100px;
+    width: 100%;
+    z-index: 200;
+    background:linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    position: fixed;
+    top: 0;
+    transition: all ease 0.5s;
+}
+
+
+.nav_items{
+    list-style: none;
+    margin-left: 170px;
+}
+
+.nav_items li{
+    display: inline-block;
+    padding: 0px 30px;
+    transition: all ease 0.3s;
+}
+
+.nav_items li a:hover{
+    color: var(--text-colorwhite);
+    transition: all ease 0.3s;
+}
+
+.socials li{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    padding: 0px 20px;
+}
+
+.socials li img{
+    width: 25px;
+    height: 25px;
+    filter: invert(72%) sepia(23%) saturate(2141%) hue-rotate(14deg) brightness(114%) contrast(105%);
+    transition: all ease 0.3s;
+}
+
+.socials li img:hover{
+    width: 32px;
+    height: 32px;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(331deg) brightness(103%) contrast(100%);
+    transition: all ease 0.3s;
+}
+
+
+.sticky_socials li img{
+    filter: invert(0%) sepia(7%) saturate(6%) hue-rotate(75deg) brightness(97%) contrast(101%);
+    transition: all ease 0.3s;
+}
+
+.sticky_socials li img:hover{
+    width: 32px;
+    height: 32px;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(331deg) brightness(103%) contrast(100%);
+    transition: all ease 0.3s;
+}
+
+
+
+.sticky_top_logo {
+    margin-top: 25px;
+    margin-left: -10px;
+    width: 90px;
+    height: 90px;
+    filter: invert(0%) sepia(7%) saturate(6%) hue-rotate(75deg) brightness(97%) contrast(101%);
+    transition: all ease 0.3s;
+}
+
+.sticky_top_logo:hover {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(331deg) brightness(103%) contrast(100%);
+}
+
+.sticky_header {
+    background:none;
+    background-color:var(--text-colormain);
+    height: 80px;
+    box-shadow: var(--text-colormain);
+    transition: all ease 0.5s;
+}
+
+.sticky_nav_items li a{
+    
+    color: var(--text-colorblack);
+    transition: all ease 0.3s;
+}
+
+.sticky_nav_items li a:hover {
+    color: var(--text-colorwhite);
+    transition: all ease 0.3s;
+}
+
+
+
+/*This is the Footer*/
+
+footer {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+    height: 140px;
+    width: 100%;
+    min-height: 100%;
+    z-index: 250;
+    background-color: var(--text-colorfooter);
+    transition: 0.6s;
+}
+
+.nav_bottom_items{
+    list-style: none;
+    margin-left: 60px;
+}
+
+.nav_bottom_items li{
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+.nav_bottom_items li a{
+    color: var(--text-colorblack);
+    transition: 0.2s;
+}
+
+.nav_bottom_items li a:hover{
+    transition: 0.2s;
+    color: var(--text-colorwhite);
+}
+
+.bottom_socials {
+    margin-right: 800px;
+}
+
+.bottom_socials li{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    padding: 0px 20px;
+}
+
+.bottom_socials li img{
+    width: 25px;
+    height: 25px;
+    filter: invert(0%) sepia(7%) saturate(6%) hue-rotate(75deg) brightness(97%) contrast(101%);
+    transition: 0.2s;
+}
+
+.bottom_socials li img:hover{
+    width: 32px;
+    height: 32px;
+    filter:  invert(100%) sepia(0%) saturate(7500%) hue-rotate(331deg) brightness(103%) contrast(100%);
+    transition: 0.2s;
+}
+
+/*This is the dropdown for the games section*/
+
+/*
+.game_dropdown{
+    display: inline-block;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0rem calc((100vw-1300px) / 2);
+}
+
+
+.game_dropdown button{
+    font-size: 1.0rem;
+    height: 100px;
+    color: var(--text-colormain);
+    font-weight: bold;
+    background: transparent;
+    text-decoration: none;
+    padding: 0 2.5rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    border-top-right-radius: .2rem;
+    border-top-left-radius: .2rem;
+}
+
+.sticky_game_dropdown button{
+    font-size: 1.0rem;
+    height: 56px;
+    color: var(--text-colorblack);
+    font-weight: bold;
+    background: transparent;
+    text-decoration: none;
+    padding: 0 2.25rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    border-top-right-radius: .2rem;
+    border-top-left-radius: .2rem;
+}
+
+.game_dropdown a{
+    display: block;
+    color: var(--text-colorblack);
+    text-decoration: none;
+    padding: 10px 19px;
+    transition: 0.2s;
+}
+
+.sticky_game_dropdown a{
+    display: block;
+    color: var(--text-colorblack);
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.2s;
+}
+
+.game_dropdown a:hover{
+    display: block;
+    color: var(--text-colorwhite);
+    text-decoration: none;
+    padding: 10px 19px;
+    background-color: #948a03;
+    transition: 0.6s;
+}
+
+.sticky_game_dropdown a:hover{
+    display: block;
+    color: var(--text-colorwhite);
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #948a03;
+    transition: 0.6s;
+}
+
+.game_dropdown .game_content{
+    display: none;
+    position: absolute;
+    background-color: var(--text-colormain);
+    min-width: 95px;
+    transition: 0.2s;
+    border-bottom-right-radius: .2rem;
+    border-bottom-left-radius: .2rem;
+}
+
+.game_dropdown a:hover{
+    color: var(--text-colorwhite);
+    background-color: var(--text-colormain);
+    transition: 0.2s;
+}
+
+.game_dropdown:hover .game_content{
+    display: block;
+    transition: 0.2s;
+}
+
+.game_dropdown:hover button{
+    color: var(--text-colorblack);
+    background: var(--text-colormain);
+    transition: 0.2s;
+}
+*/
+
+/*This is for the body of the page*/
+
+body {
+    font-weight: bold;
+    background-color: #131316;
+    color: var(--text-colorwhite);
+    font-family: 'poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/*This is for the sections in the page*/
+
+section {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    height: 1080px;
+}
+
+/*This is for the game section*/
+
+#game_section {
+    height: auto;
+}
+.game_background{
+    top: 0;
+    position: relative;
+    max-height: 500vh;
+    max-width: 100vw ;
+    top: 0;
+}
+.game_background img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/*Game Logo Animation as well as positioning*/
+
+.hidden_game_logo {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1s;
+    max-width: 1920px;
+}
+
+.show_game_logo {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+    max-width: 1920px;
+}
+
+.game_background_title{
+    position: absolute;
+    margin-right: -85vh;
+    margin-top: -5vw;
+    max-height: 20vh;
+    max-width: 40vw;
+
+}
+
+.game_background_title img{
+    margin-right: -1000px;
+    max-height: 20vh;
+    max-width: 40vw;
+}
+
+/*This is the disclaimer*/
+
+.game_disclaimer {
+    position: relative;
+    margin-right: 1400px;
+    margin-top: -400px;
+    color: var(--text-colorwhite);
+    text-decoration: none;
+    font-size: 20px;
+    z-index: 10;
+}
+
+/*This is for the video section*/
+
+#video_section {
+    background-color: transparent;
+    position: relative;
+    max-height: 500px;
+    max-width: 100%;
+}
+
+.video_container {
+    top: -200px;
+    margin-left: -50px;
+    z-index: 10;
+    position: absolute;
+    display: grid;
+    grid-area: 1/1;
+    place-items: center;
+    align-content: center;
+    border-radius: .5rem;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    height: 40vh;
+    width: 40vw;
+    
+}
+
+.video_background {
+    top: -80px;
+    position: absolute;
+    z-index: 5;
+}
+#video_section img{
+    height: 600px;
+    width: 100vw;
+}
+
+/*This is the about us section*/
+
+#about_us_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    max-height: 3800px;
+    background-color: grey;
+}
+
+.about_us_background{
+    position: relative;
+    z-index: 1;
+    width: 100%
+}
+
+.madd_container {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    place-items: center;
+    align-content: center;
+    border-radius: .5rem;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    margin-left: 200px;
+    transition: 0.2s;
+}
+
+.madd_container img{
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.madd_container:hover{
+    background-color: black;
+    transition: 0.2s;
+}
+
+.mund_container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    place-items: center;
+    align-content: center;
+    border-radius: .5rem;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    margin-right: 200px;
+    transition: 0.2s;
+}
+
+.mund_container img{
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.mund_container:hover{
+    background-color: black;
+    transition: 0.2s;
+}
+
+/*This animates the text to show up slowly*/
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+    max-width: 1920px;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+    max-width: 1920px;
+}
+
+@media(perfers-reduced-motion) {
+    .hidden{
+        transition: none;
+    }
+    .hidden_game_logo{
+        transition: none;
+    }
+}
+
+/*Slide show for games still in progress*/
+
+/*
+.container {
+    padding: 2rem;
+    max-width: 1920px;
+    max-height: 900px;
+}
+
+.slider-wrapper {
+    position: center;
+    max-width: 119rem;
+    max-height: 900px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+    
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+*/

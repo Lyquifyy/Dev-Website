@@ -1,0 +1,173 @@
+<!--This is the front page-->
+
+<!DOCTYPE html>
+<!--Color Palet: #f4e400-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--This is the title for the website-->
+    <title >Testing Website</title>
+    <link rel="stylesheet" href="front_page.css">
+    <script defer src="front_page.js"></script>
+    <script src="https://kit.fontawesome.com/90839497e3. js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!--This is for the top breadcrumb of the page-->
+
+    <header>
+        <a href="#game_section">
+            <img class="top_logo" src="Images/pixel_maddmundstudios_full_logo.png" alt="logo">
+        </a>
+        <nav>
+            <ul class="nav_items">
+                <!--
+                <div class="game_dropdown">
+                    <button>Games</button>
+                    <div class="game_content">
+                        <a href="">Game One</a>
+                        <a href="">Game Two</a>
+                        <a href="">Game Three</a>
+                    </div>
+                </div>
+            -->
+                <li><a href="blog_page.html">Blog</a></li>
+                <li><a href="#about_us_section">About</a></li>
+            </ul>
+        </nav>
+
+        <nav class="socials">
+            <li>
+                <a href="https://www.youtube.com/@MaddmundStudios">
+                    <img src="Images/youtube_icon.png" alt="logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/@maddmundstudios">
+                    <img src="Images/tiktok_icon.png" alt="logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/maddmundstudios/">
+                    <img src="Images/instagram_icon.png" alt="logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://x.com/maddmundstudios/media">
+                    <img src="Images/twitter_icon.png" alt="logo">
+                </a>
+            </li>  
+        </nav>
+    </header>
+
+    <!--This script triggers the heading to change when you scroll-->
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky_header", window.scrollY > 0);
+            header = document.querySelector(".nav_items");
+            header.classList.toggle("sticky_nav_items", window.scrollY > 0);
+            header = document.querySelector(".top_logo");
+            header.classList.toggle("sticky_top_logo", window.scrollY > 0);
+            header = document.querySelector(".socials");
+            header.classList.toggle("sticky_socials", window.scrollY > 0);
+        }) 
+    </script>
+
+    <!--This section is for the current game-->
+
+    <section id="game_section">
+            <div class="game_background">
+                <img src="Images/landing_header_timerobbers.gif">
+            </div>
+            
+            <div class="game_background_title">
+                <div class="hidden_game_logo">
+                    <img src="Images/landing_header_timerobbers_title.png">
+                </div>
+            </div>
+    </section>
+
+    <!--This section is for the current game image being displayed-->
+    <!--
+    <section id="games_section"class="hidden">
+        <section class="container">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img id="slide-1" src="Images/Slideshow Image 1.jpg" alt="Testing image for slideshow"/>
+                    <img id="slide-2" src="Images/Slideshow Image 2.jpeg" alt="Testing image for slideshow"/>
+                    <img id="slide-3" src="Images/Slideshow Image 3.jpg" alt="Testing image for slideshow"/>
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                </div>
+            </div>
+        </section>
+    </section>
+    -->
+    <!--This seciton is for the gaming videos that are going to be displayed-->
+
+    <section id="video_section">
+        <img class="video_background" src="Images/landing_videobackground.png">\
+        <div class="game_disclaimer">
+            Disclaimer: This image may change
+        </div>
+        <div class="video_container">
+            <div class="hidden">
+                Videos here
+            </div>
+        </div>
+    </section>
+
+    <!--This section is for the "about Us" part of the website-->
+
+    <section id="about_us_section">
+        <img class="about_us_background" src="Images/landing_about_frame.png">
+        <div class="madd_container">
+            <img class="about_us_button" style="z-index: 2;" src="Images/landing_about_lorant_button.png">
+        </div>
+        <div class="mund_container">
+            <img class="about_us_button" style="z-index: 3;" src="Images/landing_about_jacob_button.png">
+        </div>
+    </section>
+
+    <!--This is for the bottom breadcrumb of the page-->
+
+    <footer>
+        <img class="bottom_logo" src="Images/pixel_maddmundstudios_crown_logo.png" alt="logo">
+        <nav class="bottom_socials">
+            <li>
+                <a href="https://www.youtube.com/@MaddmundStudios">
+                    <img src="Images/youtube_icon.png" alt="logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/@maddmundstudios">
+                    <img src="Images/tiktok_icon.png" alt="logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/maddmundstudios/">
+                    <img src="Images/instagram_icon.png" alt="logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://x.com/maddmundstudios/media">
+                    <img src="Images/twitter_icon.png" alt="logo">
+                </a>
+            </li> 
+        </nav>
+        <nav>
+            <ul class="nav_bottom_items">
+                <li><a href="blog_page.html">Blog</a></li>
+                <li><a href="privacy_policy_page.html">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>

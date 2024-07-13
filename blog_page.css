@@ -1,0 +1,388 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+:root {
+    --text-colormain: #f4e400;
+    --text-colorblack: #000;
+    --text-colorwhite: #fff;
+    --text-colorfooter: #7d1925;
+}
+
+
+/*This is the Header*/
+
+.top_logo {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    overflow-x: auto;
+    overflow-y: auto;
+    filter: invert(87%) sepia(22%) saturate(5851%) hue-rotate(9deg) brightness(110%) contrast(101%);
+    transition: all ease 0.3s;
+}
+
+.top_logo:hover {
+    filter:  invert(100%) sepia(0%) saturate(7500%) hue-rotate(331deg) brightness(103%) contrast(100%);
+}
+
+.bottom_logo {
+    width: 100px;
+    height: 100px;
+    overflow-x: auto;
+    overflow-y: auto;
+    filter: invert(0%) sepia(7%) saturate(6%) hue-rotate(75deg) brightness(97%) contrast(101%);
+}
+
+li, a, button{
+    color: var(--text-colormain);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+    height: 100px;
+    width: 100%;
+    z-index: 300;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    transition: all ease 0.5s;
+}
+
+.nav_items{
+    list-style: none;
+    margin-left: 170px;
+}
+
+.nav_items li{
+    display: inline-block;
+    padding: 0px 30px;
+    transition: all ease 0.3s;
+}
+
+.nav_items li a:hover{
+    color: var(--text-colorwhite);
+    transition: all ease 0.3s;
+}
+
+.socials li{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    padding: 0px 20px;
+}
+
+.socials li img{
+    width: 25px;
+    height: 25px;
+    filter: invert(87%) sepia(22%) saturate(5851%) hue-rotate(9deg) brightness(110%) contrast(101%);
+    transition: all ease 0.3s;
+}
+
+.socials li img:hover{
+    width: 32px;
+    height: 32px;
+    filter:  invert(100%) sepia(0%) saturate(7500%) hue-rotate(331deg) brightness(103%) contrast(100%);
+    transition: all ease 0.3s;
+}
+
+
+.sticky_socials li img{
+    filter: invert(0%) sepia(7%) saturate(6%) hue-rotate(75deg) brightness(97%) contrast(101%);
+    transition: all ease 0.3s;
+}
+
+.sticky_socials li img:hover{
+    width: 32px;
+    height: 32px;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(331deg) brightness(103%) contrast(100%);
+    transition: all ease 0.3s;
+}
+
+
+
+.sticky_top_logo {
+    margin-top: 25px;
+    margin-left: -10px;
+    width: 94px;
+    height: 94px;
+    filter: invert(0%) sepia(7%) saturate(6%) hue-rotate(75deg) brightness(97%) contrast(101%);
+    transition: all ease 0.3s;
+}
+.sticky_top_logo:hover {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(331deg) brightness(103%) contrast(100%);
+}
+
+.sticky_header {
+    background-color:var(--text-colormain);
+    height: 80px;
+    box-shadow: var(--text-colormain);
+    transition: all ease 0.5s;
+}
+
+.sticky_nav_items li a{
+    color: var(--text-colorblack);
+    transition: all ease 0.3s;
+}
+
+.sticky_nav_items li a:hover {
+    color: var(--text-colorwhite);
+    transition: all ease 0.3s;
+}
+
+
+
+/*This is the Footer*/
+
+footer {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    padding: 0 3%;
+    width: 100%;
+    height: 140px;
+    z-index: 250;
+    background-color: var(--text-colorfooter);
+    transition: 0.6s;
+}
+
+.nav_bottom_items{
+    list-style: none;
+    margin-left: 120px;
+}
+
+.nav_bottom_items li{
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+.nav_bottom_items li a{
+    color: var(--text-colorblack);
+    transition: 0.2s;
+}
+
+.nav_bottom_items li a:hover{
+    transition: 0.2s;
+    color: var(--text-colorwhite);
+}
+
+.bottom_socials {
+    margin-right: 800px;
+}
+
+.bottom_socials li{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    padding: 0px 20px;
+}
+
+.bottom_socials li img{
+    width: 25px;
+    height: 25px;
+    filter: invert(0%) sepia(7%) saturate(6%) hue-rotate(75deg) brightness(97%) contrast(101%);
+    transition: 0.2s;
+}
+
+.bottom_socials li img:hover{
+    width: 32px;
+    height: 32px;
+    filter:  invert(100%) sepia(0%) saturate(7500%) hue-rotate(331deg) brightness(103%) contrast(100%);
+    transition: 0.2s;
+}
+
+/*This is for the body of the page*/
+
+body {
+    font-weight: bold;
+    color: var(--text-colorblack);
+    font-family: 'poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.blog_background_main {
+    position: relative;
+    height: 460vh; /* Example height; adjust as needed */
+    overflow: hidden; /* Hide overflow to prevent scrolling */
+}
+
+.parallax_container {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Occupy full height of parent (.blog_background_main) */
+}
+
+.parallax_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Occupy full height of parent (.parallax_container) */
+    z-index: 2; /* Ensure parallax content is above tiled background */
+}
+
+.parallax_background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 380vh; /* Adjust height as per your design */
+}
+
+
+/*This is for the old parallax background to deal with the images moving down the screen*/
+
+/*
+.scroll {
+    margin-top: -500px;
+}
+
+.hidden_images img{
+    width: 100px;
+    height: 100px;
+}
+*/
+
+.tiled_background {
+    position: absolute;
+    top: 380vh;
+    left: 0;
+    width: 100%;
+    height: auto; /* Occupy full height of parent (.blog_background_main) */
+    z-index: 1; /* Place tiled background below parallax content */
+}
+
+.tiled_background img {
+    width: 100%;
+    height: 100%; /* Adjust height as per your design */
+}
+
+/*This is for the blog header*/
+
+.blog_header {
+    background-color: transparent;
+    color: var(--text-colormain);
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 500px;
+    z-index: 250; /* Ensure higher than parallax images */
+    padding-top: 100px;
+    padding-bottom: 100px;
+    align-items: center;
+}
+
+/*This is for the sections within the page*/
+
+section {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*This is for the blog information*/
+
+.blog_information{
+    position: absolute;
+    top: 30vh;
+    width: 100%;
+    height: 450vh;
+    z-index: 10; /* Higher z-index */
+}
+
+.blog_section_right {
+    position: relative;
+    background-color: transparent;
+    top: 0;
+    left: 800px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem calc((100vw - 1300px) / 2);
+    height: 1200px;
+    width: 100%;
+    z-index: 10; /* Higher z-index */
+    transition: 0.6s;
+}
+
+.blog_info_container_right {
+    background-color: grey; /* Semi-transparent background */
+    height: 80vh;
+    width: 30vw;
+    position: relative;
+    top: 50px;
+}
+.blog_info_text_right {
+    padding-left: 50px;
+    padding-top: 40px;
+    position: absolute;
+}
+
+
+/*This animates the text to show up slowly*/
+
+.blog_title_right {
+    padding-left: 50px;
+    padding-top: 40px;
+    width: 30vw;
+    height: 10vh;
+    background-color: #eec7a3;
+    position: relative;
+    animation: fade-in linear;
+    animation-timeline: view(1200px 0px);
+}
+
+.blog_info_right {
+    padding-left: 50px;
+    padding-top: 40px;
+    width: 30vw;
+    height: 70vh;
+    background-color: #f7e8cb;
+    position: relative;
+    animation: fade-in linear;
+    animation-timeline: view(1200px 0px);
+}
+
+@keyframes fade-in {
+    from {opacity: 0; filter: blur(5px);}
+    to {opacity: 1; filter: blur(0px);}
+}
+
+
+.hidden{
+    position:relative;
+    left:80px; 
+    top:20px;
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+    max-width: 1920px;
+}
+
+.show{
+    position:relative;
+    left:80px; 
+    top:20px;
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+    max-width: 1920px;
+}
+
+@media(perfers-reduced-motion) {
+    .hidden{
+        transition: none;
+    }
+}
