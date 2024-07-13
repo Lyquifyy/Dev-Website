@@ -369,15 +369,15 @@ section {
     position: absolute;
     margin-right: -85vh;
     margin-top: -5vw;
-    max-height: 20vh;
-    max-width: 40vw;
+    max-height: 25vh;
+    max-width: 45vw;
 
 }
 
 .game_background_title img{
     margin-right: -1000px;
-    max-height: 20vh;
-    max-width: 40vw;
+    max-height: 25vh;
+    max-width: 45vw;
 }
 
 /*This is the disclaimer*/
@@ -426,24 +426,24 @@ section {
 }
 #video_section img{
     height: 600px;
-    width: 100vw;
+    width: 100%;
 }
 
 /*This is the about us section*/
 
 #about_us_section {
-    display: flex;
+    display: grid;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     max-height: 3800px;
     background-color: grey;
 }
 
 .about_us_background{
     position: relative;
+    width: 100%;
     z-index: 1;
-    width: 100%
 }
 
 .madd_container {
