@@ -55,7 +55,7 @@ header {
     align-items: center;
     padding: 0 3%;
     height: 100px;
-    width: 100%;
+    width: 100vw;
     z-index: 300;
     background-color: transparent;
     position: fixed;
@@ -225,21 +225,21 @@ body {
 
 .blog_background_main {
     position: relative;
-    height: 460vh; /* Example height; adjust as needed */
+    height: 400vh; /* Example height; adjust as needed */
     overflow: hidden; /* Hide overflow to prevent scrolling */
 }
 
 .parallax_container {
     position: relative;
-    width: 100%;
-    height: 100%; /* Occupy full height of parent (.blog_background_main) */
+    width: 100vw;
+    height: 100vh; /* Occupy full height of parent (.blog_background_main) */
 }
 
 .parallax_background {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100%; /* Occupy full height of parent (.parallax_container) */
     z-index: 2; /* Ensure parallax content is above tiled background */
 }
@@ -248,7 +248,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 380vh; /* Adjust height as per your design */
 }
 
@@ -270,13 +270,13 @@ body {
     position: absolute;
     top: 380vh;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: auto; /* Occupy full height of parent (.blog_background_main) */
     z-index: 1; /* Place tiled background below parallax content */
 }
 
 .tiled_background img {
-    width: 100%;
+    width: 100vw;
     height: 100%; /* Adjust height as per your design */
 }
 
@@ -289,7 +289,7 @@ body {
     position: absolute;
     left: 102vh;
     top: 0;
-    width: 100%;
+    width: 100vw;
     height: 500px;
     z-index: 250; /* Ensure higher than parallax images */
     padding-top: 100px;
@@ -310,8 +310,7 @@ section {
 .blog_information{
     position: absolute;
     top: 50vh;
-    width: 100%;
-    height: 450vh;
+    width: 100vh;
     z-index: 10; /* Higher z-index */
 }
 
@@ -324,7 +323,7 @@ section {
     justify-content: space-between;
     padding: 0rem calc((100vw - 1300px) / 2);
     height: 1200px;
-    width: 100%;
+    width: 100vh;
     z-index: 10; /* Higher z-index */
     transition: 0.6s;
 }
