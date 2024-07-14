@@ -18,7 +18,8 @@
 
     <header>
         <a href="#game_section">
-            <img class="top_logo" src="Images/pixel_maddmundstudios_full_logo.png" alt="logo">
+            <img class="top_logo_hidden" src="Images/pixel_maddmundstudios_crown_logo.png" alt="logo">
+            <img class="top_logo_shown" src="Images/pixel_maddmundstudios_full_logo.png" alt="logo">
         </a>
         <nav>
             <ul class="nav_items">
@@ -69,8 +70,10 @@
             header.classList.toggle("sticky_header", window.scrollY > 0);
             header = document.querySelector(".nav_items");
             header.classList.toggle("sticky_nav_items", window.scrollY > 0);
-            header = document.querySelector(".top_logo");
-            header.classList.toggle("sticky_top_logo", window.scrollY > 0);
+            header = document.querySelector(".top_logo_shown");
+            header.classList.toggle("sticky_top_logo_hidden", window.scrollY > 0);
+            header = document.querySelector(".top_logo_hidden");
+            header.classList.toggle("sticky_top_logo_shown", window.scrollY > 0);
             header = document.querySelector(".socials");
             header.classList.toggle("sticky_socials", window.scrollY > 0);
         }) 
@@ -114,7 +117,7 @@
     <section id="video_section">
         <img class="video_background" src="Images/landing_videobackground.png">\
         <div class="game_disclaimer">
-            Disclaimer: This image may change
+            Disclaimer: Art may not represent final product
         </div>
         <div class="video_container">
             <div class="hidden">

@@ -19,7 +19,8 @@
 
     <header>
         <a href="#blog_header">
-            <img class="top_logo" src="Images/pixel_maddmundstudios_full_logo.png" alt="logo">
+            <img class="top_logo_hidden" src="Images/pixel_maddmundstudios_crown_logo.png" alt="logo">
+            <img class="top_logo_shown" src="Images/pixel_maddmundstudios_full_logo.png" alt="logo">
         </a>
         <nav>
             <ul class="nav_items">
@@ -81,9 +82,13 @@
 
     <section id="blog_header" class="blog_header">
         <h1>
+<<<<<<< HEAD
+            <img src="Images/blog_title_animation.gif">
+=======
             <div class="hidden">
                 MaddMund Blogs 
             </div>
+>>>>>>> 7f0176b5383a60d810a622b77ffecc05be0df995
         </h1>
     </section>
 
@@ -111,8 +116,10 @@
             header.classList.toggle("sticky_header", window.scrollY > 0);
             header = document.querySelector(".nav_items");
             header.classList.toggle("sticky_nav_items", window.scrollY > 0);
-            header = document.querySelector(".top_logo");
-            header.classList.toggle("sticky_top_logo", window.scrollY > 0);
+            header = document.querySelector(".top_logo_shown");
+            header.classList.toggle("sticky_top_logo_hidden", window.scrollY > 0);
+            header = document.querySelector(".top_logo_hidden");
+            header.classList.toggle("sticky_top_logo_shown", window.scrollY > 0);
             header = document.querySelector(".socials");
             header.classList.toggle("sticky_socials", window.scrollY > 0);
 
